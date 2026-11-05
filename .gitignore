@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.hypothesis/
+.pytest_cache/
+pytest-tmp/
+securecrypt-*.png
+uploads/*
+outputs/*
+!uploads/.gitkeep
+!outputs/.gitkeep
+.venv/
+dist/
+*.egg-info/

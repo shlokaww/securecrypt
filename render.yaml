@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: securecrypt
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    autoDeployTrigger: commit
+    envVars:
+      - key: WEB_CONCURRENCY
+        value: "1"

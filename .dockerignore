@@ -1,0 +1,9 @@
+uploads/
+outputs/
+tests/
+.git/
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.md
