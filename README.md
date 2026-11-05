@@ -20,6 +20,10 @@ Open <http://localhost:5000/> after startup.
 
 ## Public hosting
 
+Live demo: <https://securecrypt-9400.onrender.com>
+
+**Privacy warning:** This is a public demo. Do not enter real passwords, confidential plaintext, private keys, personal information, or sensitive files. The server receives the submitted data to perform encryption or decryption, and this demo is not intended for protecting production secrets.
+
 The project includes a Render Blueprint in `render.yaml`. Connect this repository to Render and create the `securecrypt` web service from the Blueprint. Render supplies a public `onrender.com` address and HTTPS, so a separately purchased domain is optional. The configured Free compute plan has limited CPU and sleeps when idle. Set `WEB_CONCURRENCY=1` to limit simultaneous Scrypt operations on the small instance.
 
 For a free preview, change the service plan to `free`. Free web services sleep after 15 minutes without traffic and can take about a minute to wake; Render describes this plan as intended for testing and hobby projects rather than production.
